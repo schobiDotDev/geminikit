@@ -1,0 +1,27 @@
+# Source files (only dist/ is published)
+src/
+tsconfig.json
+
+# Development files
+test-login.ts
+*.log
+
+# Git files
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Playwright MCP
+.playwright-mcp/
+
+# Browser profiles
+.geminikit/
+
+# Build artifacts we don't need
+*.tgz

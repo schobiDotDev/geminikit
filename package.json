@@ -4,6 +4,11 @@
   "description": "Browser automation for Google Gemini image generation",
   "main": "dist/lib.js",
   "types": "dist/lib.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
   "exports": {
     ".": {
       "types": "./dist/lib.d.ts",
