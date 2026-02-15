@@ -1,0 +1,49 @@
+{
+  "name": "geminikit",
+  "version": "0.1.0",
+  "description": "Browser automation for Google Gemini image generation",
+  "main": "dist/lib.js",
+  "types": "dist/lib.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/lib.d.ts",
+      "import": "./dist/lib.js",
+      "require": "./dist/lib.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/lib.ts",
+    "link": "npm run build && npm link",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schobiDotDev/geminikit.git"
+  },
+  "keywords": [
+    "gemini",
+    "google",
+    "ai",
+    "image-generation",
+    "browser-automation",
+    "text-to-image"
+  ],
+  "author": "schobiDotDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schobiDotDev/geminikit/issues"
+  },
+  "homepage": "https://github.com/schobiDotDev/geminikit#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "playwright": "^1.50.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,20 @@
+node_modules/
+dist/
+*.tgz
+
+# Browser profile (contains login session)
+.geminikit/
+
+# Test outputs
+/tmp/
+*.png
+*.jpg
+*.jpeg
+
+# Python virtual environment (for watermark removal)
+.venv/
+venv/
+__pycache__/
+
+# Playwright MCP test data
+.playwright-mcp/
