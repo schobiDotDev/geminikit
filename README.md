@@ -36,20 +36,20 @@ Browser automation library for Google Gemini image generation with persistent se
 By installing this package, you acknowledge that you understand and accept the risks.
 
 ```bash
-npm install geminikit
+npm install gemgen
 ```
 
 Or with your preferred package manager:
 
 ```bash
 # yarn
-yarn add geminikit
+yarn add gemgen
 
 # pnpm
-pnpm add geminikit
+pnpm add gemgen
 
 # bun
-bun add geminikit
+bun add gemgen
 ```
 
 ## Quick Start
@@ -59,7 +59,7 @@ bun add geminikit
 On the first run, use `headless: false` to log in to your Google account:
 
 ```typescript
-import { generateImage } from 'geminikit';
+import { generateImage } from 'gemgen';
 
 const result = await generateImage(
   'a neon-lit cyberpunk cityscape at night with glowing signs and rain-slicked streets',
@@ -78,7 +78,7 @@ A browser window will open. Log in to your Google account manually. The session 
 After logging in once, you can run headlessly:
 
 ```typescript
-import { generateImage } from 'geminikit';
+import { generateImage } from 'gemgen';
 
 const result = await generateImage(
   'a serene mountain landscape at sunset',
@@ -130,7 +130,7 @@ const result = await generateImage(
 For more control over the browser lifecycle:
 
 ```typescript
-import { GeminiClient } from 'geminikit';
+import { GeminiClient } from 'gemgen';
 
 const client = new GeminiClient();
 
@@ -159,7 +159,7 @@ try {
 By default, the browser profile is saved to `~/.geminikit/browser-profile`. You can customize this:
 
 ```typescript
-import { GeminiClient } from 'geminikit';
+import { GeminiClient } from 'gemgen';
 
 const client = new GeminiClient({
   userDataDir: '/path/to/custom/profile'
@@ -212,7 +212,7 @@ GeminiKit will automatically detect and use it if available at `~/code/Watermark
 This has been fixed in the latest version. Make sure you're on the newest version:
 
 ```bash
-npm update geminikit
+npm update gemgen
 ```
 
 ### Browser profile location

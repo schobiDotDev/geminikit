@@ -1,5 +1,5 @@
 {
-  "name": "geminikit",
+  "name": "gemgen",
   "version": "0.1.0",
   "description": "Browser automation for Google Gemini image generation",
   "main": "dist/lib.js",
